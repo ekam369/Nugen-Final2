@@ -1,0 +1,276 @@
+$desk1h : 857px;
+$desk1w : 1372px;
+$desk2h : 622px;
+$desk2w : 1122px;
+$desk3h : 500px;
+$desk3w : 500px;
+$desk4h : 420px;
+@mixin desk1h {
+    @media (max-height: $desk1h) {
+        @content;
+    }
+}
+@mixin desk1w {
+    @media (max-width: $desk1w) {
+        @content;
+    }
+}
+@mixin desk2h {
+    @media (max-height: $desk2h) {
+        @content;
+    }
+}
+@mixin desk2w {
+    @media (max-width: $desk2w) {
+        @content;
+    }
+}
+@mixin desk3h {
+    @media (max-height: $desk3h) {
+        @content;
+    }
+}
+@mixin desk3w {
+    @media (max-width: $desk3w) {
+        @content;
+    }
+}
+@mixin desk4h {
+    @media (max-height: $desk4h) {
+        @content;
+    }
+}
+
+.expend-inp-cont {
+    position: absolute;
+    margin-top: -60px;
+    z-index: 100;
+    width: 97.9%;
+    height: 95.8%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.76);
+
+    .animOpen {
+        animation: mov 0.6s ease-out;
+    }
+    .animClose {
+        animation: movRev 0.6s ease-out;
+    }
+
+    .exp-inp-box {
+        width: 24%;
+        height: 92%;
+        margin: 20px auto;
+        padding: 15px;
+        background: #fff;
+
+        @include desk2h {
+            height: 89%;
+        }
+        @include desk3h {
+            height: 86%;
+        }
+        @include desk4h {
+            height: 83%;
+        }
+        @include desk2w {
+            width: 350px;
+            // height: 90vh;
+        }
+        @include desk3w {
+            width: 250px;
+        }
+        
+        .exp-inp-cont {
+            width: 100%;
+            height: 100%;
+            border: rgba(0, 0, 0, 0.205) solid 2px;
+            border-radius: 10px;
+
+            .cross-cont {
+                cursor: pointer;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 100%;
+
+                .cross {
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    font-size: 40px;
+                    font-weight: 100;
+                    background-image: url("../../Assets/53804.png");
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                }   
+            }
+
+            .inp-up-cont {
+                display: flex;
+                padding-top: 10px;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 40px;
+                color: #000;
+                font-size: 36px;
+                font-family: "Raleway";
+
+                @include desk1w {
+                    font-size: 30px;
+                }
+                @include desk2w {
+                    font-size: 26px;
+                }
+            }
+    
+            .inp-details-cont {
+                width: 100%;
+                height: 88%;
+                // overflow-y: scroll;
+
+                @include desk1h {
+                    overflow-y: scroll;
+                    height: 85%;
+                }
+                @include desk2h {
+                    height: 80%;
+                }
+                @include desk3h {
+                    height: 77%;
+                }
+                @include desk4h {
+                    height: 73%;
+                }
+
+                .inp-details-box {
+                    margin-top: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 30px;
+
+                    .detail-box {
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: -13px;
+                        margin-bottom: 40px;
+                    }
+        
+                    .inp-submit-btn {
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 43%;
+                        height: 54px;
+                        background: #4064f6;
+                        outline: none;
+                        margin: 50px 48%;
+                        color: #fff;
+                        border-radius: 10px;
+                        font-size: 18px;
+
+                        @include desk1w {
+                            font-size: 15px;
+                        }
+                        @include desk3w {
+                            height: 50px;
+                            width: 48%;
+                            font-size: 13px;
+                            margin: 50px 42%;
+                        }
+
+                    }
+                }
+            }
+            select {
+                padding: 10px;
+                margin-top: 10px;
+                border: rgba(0, 0, 0, 0.541) solid 1px;
+                outline: none;
+                font-size: 18px;
+                width: 93%;
+                background: none;
+                color: rgba(41, 41, 41, 0.493);
+                transition: 0.3s;
+                border-radius: 10px;
+
+                @include desk1w {
+                    font-size: 16px;
+                }
+            }
+            select:focus {
+                color: #000;
+            }
+
+        
+            input {
+                padding: 10px;
+                margin-top: 10px;
+                border: rgba(0, 0, 0, 0.541) solid 1px;
+                outline: none;
+                font-size: 18px;
+                width: 89%;
+                background: none;
+                color: rgb(41, 41, 41);
+                transition: 0.3s;
+                border-radius: 10px;
+
+                @include desk1w {
+                    font-size: 16px;
+                }
+                @include desk2w {
+                    width: 85%;
+                    font-size: 14px;
+                }
+                @include desk3w {
+                    width: 83%;
+                    font-size: 12px;
+                }
+            }
+            label {
+                font-size: 19px;
+                font-weight: 100;
+                font-family: "poppins";
+                color: rgba(0, 0, 0, 0.698);
+
+                @include desk1w {
+                    font-size: 17px;
+                }
+                @include desk2w {
+                    font-size: 17px;
+                }
+                @include desk3w {
+                    font-size: 15px;
+                }
+            }
+        }
+
+    }
+}
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+::placeholder {
+    font-size: 17px;    
+    color: rgb(131, 130, 130);       
+}
+
+@keyframes mov {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes movRev {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}

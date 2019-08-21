@@ -1,0 +1,376 @@
+$desk1: 730px;
+$desk2: 600px;
+$desk3: 500px;
+$desk4: 450px;
+$desk5: 380px;
+$desk6: 310px;
+$desk7: 237px;
+$desk1w: 1200px;
+$desk2w: 991px;
+$desk3w: 962px;
+$desk4w: 710px;
+$desk5w: 500px;
+$desk6w: 430px;
+$desk61w: 340px;
+$desk7w: 1120px;
+$desk8w: 640px;
+$desk9w: 400px;
+$desk10w: 360px;
+
+@mixin desk1{
+    @media (max-height: $desk1) {
+        @content;
+    }
+}
+@mixin desk1w{
+    @media (max-width: $desk1w) {
+        @content;
+    }
+}
+@mixin desk2{
+    @media (max-height: $desk2) {
+        @content;
+    }
+}
+@mixin desk2w{
+    @media (max-width: $desk2w) {
+        @content;
+    }
+}
+@mixin desk3{
+    @media (max-height: $desk3) {
+        @content;
+    }
+}
+@mixin desk3w{
+    @media (max-width: $desk3w) {
+        @content;
+    }
+}
+@mixin desk4{
+    @media (max-height: $desk4) {
+        @content;
+    }
+}
+@mixin desk4w{
+    @media (max-width: $desk4w) {
+        @content;
+    }
+}
+@mixin desk5{
+    @media (max-height: $desk5) {
+        @content;
+    }
+}
+@mixin desk5w{
+    @media (max-width: $desk5w) {
+        @content;
+    }
+}
+@mixin desk6{
+    @media (max-height: $desk6) {
+        @content;
+    }
+}
+@mixin desk6w{
+    @media (max-width: $desk6w) {
+        @content;
+    }
+}
+@mixin desk61w{
+    @media (max-width: $desk6w) {
+        @content;
+    }
+}
+@mixin desk7{
+    @media (max-height: $desk7) {
+        @content;
+    }
+}
+@mixin desk7w{
+    @media (max-width: $desk7w) {
+        @content;
+    }
+}
+@mixin desk8w{
+    @media (max-width: $desk8w) {
+        @content;
+    }
+}
+@mixin desk9w{
+    @media (max-width: $desk9w) {
+        @content;
+    }
+}
+@mixin desk10w{
+    @media (max-width: $desk10w) {
+        @content;
+    }
+}
+
+.submission-cont {
+    width: 65%;
+    height: 85%;
+    margin-top: 18px;
+    margin-left: 14px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 4px 20px 2px;
+    transition: 0.5s;
+    overflow-y: scroll;
+
+    display: none;
+
+    @include desk1w{
+        width: 93%;
+    }
+    @include desk3w{
+        width: 93%;
+        height: 80%;
+    }
+    @include desk4w{
+        font-size: 12px;
+    }
+    @include desk5w{
+        font-size: 10px;
+    }
+    @include desk6w{
+        font-size: 8px;
+    }
+    @include desk61w{
+        font-size: 6px;
+    }
+
+    .upper-cont {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .assi-tex {
+            font-size: 16px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.568);
+            margin-bottom: 40px;
+
+            @include desk8w {
+                font-size: 14px;
+            }
+            @include desk9w {
+                font-size: 10px;
+            }
+        }
+
+        .togg {
+            display: flex;            
+            justify-content: flex-end;
+            width: 200px;
+            // background: #000;
+
+            @include desk10w {
+                width: 155px;
+            }
+
+            .switch {
+                margin-top: -8px;
+                transform: scale(0.5);
+                position: relative;
+                display: inline-block;
+                width: 60px;
+                height: 34px;
+
+                @include desk10w {
+
+                    margin-top: -11px;
+                    transform: scale(0.4);
+                    width: 55px;
+                }
+
+              }
+              
+              .switch input { 
+                opacity: 0;
+                width: 0;
+                height: 0;
+              }
+              
+              .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #ccc;
+                -webkit-transition: .4s;
+                transition: .4s;
+              }
+              
+              .slider:before {
+                position: absolute;
+                content: "";
+                height: 26px;
+                width: 26px;
+                left: 4px;
+                bottom: 4px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+              }
+              
+              input:checked + .slider {
+                background-color: #2196F3;
+              }
+              
+              input:focus + .slider {
+                box-shadow: 0 0 1px #2196F3;
+              }
+              
+              input:checked + .slider:before {
+                -webkit-transform: translateX(26px);
+                -ms-transform: translateX(26px);
+                transform: translateX(26px);
+              }
+              
+              /* Rounded sliders */
+              .slider.round {
+                border-radius: 34px;
+              }
+              
+              .slider.round:before {
+                border-radius: 50%;
+              }
+              
+        }
+    }
+    
+    .batches-cont{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 30%;
+        height: 40px;
+        margin: 0 auto;
+
+        @include desk8w {
+            width: 60%;
+        }
+
+        .batch {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-weight: bold;
+            color: #fff;
+
+            @include desk5w{
+                width: 40px;
+                height: 40px;
+            }
+            @include desk6w{
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .m {
+            background: #00ff4c;
+        }
+        .d {
+            background: #18bff6;
+        }
+        .e {
+            background: #ffbf00;
+        }
+    }
+
+    .assign-tables{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+        width: 98.5%;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color:rgb(32,37,65);
+        height: 50px;
+        border-radius: 20px;
+        color: rgba(255, 255, 255, 0.856);
+        font-weight: bold;
+        margin-bottom: 20px;
+
+        .head-tex{
+            display: flex;
+            justify-content: center;
+            width: 150px;
+        }
+    }
+
+    .content{
+        width: 98.5%;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+
+        .cont-tex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 50px;
+            font-weight: bold;
+            color: rgba(32, 37, 65, 0.808);
+
+            .icos{
+                color: #00ff4c;
+                font-size: 20px;
+            }
+            .icou{
+                color: #ff0000;
+                font-size: 20px;
+            }
+
+            .sub{
+                display: inline-block;
+                border-radius: 5px;
+                padding: 6px 30px;
+                height: 40%;
+                color: #fff;
+
+                @include desk4w {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;    
+                    padding: 3px 25px;
+                }
+                @include desk5w {
+                    padding: 3px 20px;
+                }
+                @include desk6w {
+                    padding: 3px 15px;
+                }
+
+            }
+            .success1{
+                background: #bb0707;
+            }
+            .success2{
+                background: #ff744d;
+            }
+            .success3{
+                background: #ffbf00;
+            }
+            .success4{
+                background: #18bff6;
+            }
+            .success5{
+                background: #00ff4c;
+            }
+        }
+        
+    }  
+}

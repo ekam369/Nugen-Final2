@@ -1,0 +1,258 @@
+$desk1: 730px;
+$desk2: 600px;
+$desk3: 500px;
+$desk4: 450px;
+$desk5: 380px;
+$desk6: 310px;
+$desk7: 237px;
+$desk1w: 1200px;
+$desk2w: 991px;
+$desk3w: 962px;
+$desk4w: 710px;
+$desk5w: 500px;
+$desk6w: 430px;
+$desk61w: 340px;
+$desk7w: 1120px;
+
+@mixin desk1{
+    @media (max-height: $desk1) {
+        @content;
+    }
+}
+@mixin desk1w{
+    @media (max-width: $desk1w) {
+        @content;
+    }
+}
+@mixin desk2{
+    @media (max-height: $desk2) {
+        @content;
+    }
+}
+@mixin desk2w{
+    @media (max-width: $desk2w) {
+        @content;
+    }
+}
+@mixin desk3{
+    @media (max-height: $desk3) {
+        @content;
+    }
+}
+@mixin desk3w{
+    @media (max-width: $desk3w) {
+        @content;
+    }
+}
+@mixin desk4{
+    @media (max-height: $desk4) {
+        @content;
+    }
+}
+@mixin desk4w{
+    @media (max-width: $desk4w) {
+        @content;
+    }
+}
+@mixin desk5{
+    @media (max-height: $desk5) {
+        @content;
+    }
+}
+@mixin desk5w{
+    @media (max-width: $desk5w) {
+        @content;
+    }
+}
+@mixin desk6{
+    @media (max-height: $desk6) {
+        @content;
+    }
+}
+@mixin desk6w{
+    @media (max-width: $desk6w) {
+        @content;
+    }
+}
+@mixin desk61w{
+    @media (max-width: $desk6w) {
+        @content;
+    }
+}
+@mixin desk7{
+    @media (max-height: $desk7) {
+        @content;
+    }
+}
+@mixin desk7w{
+    @media (max-width: $desk7w) {
+        @content;
+    }
+}
+
+
+.assign-cont{
+    overflow-y: scroll;
+    width: 65%;
+    height: 85%;
+    margin-top: 18px;
+    margin-left: 14px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 4px 20px 2px;
+    transition: 0.5s;
+    
+    // display: none;
+
+    @include desk1w{
+        width: 93%;
+    }
+    @include desk3w{
+        width: 93%;
+        height: 80%;
+    }
+    @include desk4w{
+        font-size: 12px;
+    }
+    @include desk5w{
+        font-size: 10px;
+    }
+    @include desk6w{
+        font-size: 8px;
+    }
+    @include desk61w{
+        font-size: 6px;
+    }
+
+    .content-cont{
+        // display: none;
+
+        .assi-tex{
+            font-size: 16px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.568);
+        }
+        .bt-search{
+    
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+    
+            .bt-add{
+                cursor: pointer;
+                display: inline-block;
+                padding: 13px 19px;
+                color: #fff;
+                border-radius: 8px;
+                background: #fc007d;    
+                font-weight: bold;
+                font-size: 13px;
+
+                .link {
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+                @include desk4w {
+                    font-size: 11px;
+                }
+                @include desk5w {
+                    font-size: 8px;
+                }
+            }
+            .search{
+                display: flex;
+                padding-left: 10px;
+                align-items: center;
+                width: 160px;
+                outline: none;
+                border-radius: 6px;
+
+                @include desk4w {
+                    width: 130px;
+                }
+                @include desk5w {
+                    width: 110px;
+                }
+            }
+        }
+    
+        .assign-tables{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 40px;
+            width: 98.5%;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color:rgb(32,37,65);
+            height: 50px;
+            border-radius: 20px;
+            color: rgba(255, 255, 255, 0.856);
+            font-weight: bold;
+            margin-bottom: 20px;
+    
+            .head-tex{
+                display: flex;
+                justify-content: center;
+                width: 150px;
+            }
+        }
+        .content{
+            width: 98.5%;
+            padding-left: 10px;
+            padding-right: 10px;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+    
+            .cont-tex{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 150px;
+                height: 50px;
+                font-weight: bold;
+                color: rgba(32, 37, 65, 0.808);
+    
+                .sub{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50%;
+                    height: 50%;
+                    border-radius: 5px;
+                    color: #fff;
+
+                    @include desk4w {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;    
+                        padding: 3px 25px;
+                    }
+                    @include desk5w {
+                        padding: 3px 20px;
+                    }
+                    @include desk6w {
+                        padding: 3px 15px;
+                    }
+    
+                }
+                .success{
+                    background: #00ff4c;
+                }
+                .success5{
+                    background: #ff744d;
+                }
+                .success10{
+                    background: #ffbf00;
+                }
+                .success15{
+                    background: #18bff6;
+                }
+            }
+            
+        }   
+    }
+
+}

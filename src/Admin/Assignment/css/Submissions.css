@@ -1,0 +1,359 @@
+.submission-cont {
+  width: 65%;
+  height: 85%;
+  margin-top: 18px;
+  margin-left: 14px;
+  background: #fff;
+  padding: 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.274) 2px 4px 20px 2px;
+          box-shadow: rgba(0, 0, 0, 0.274) 2px 4px 20px 2px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow-y: scroll;
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .submission-cont {
+    width: 93%;
+  }
+}
+
+@media (max-width: 962px) {
+  .submission-cont {
+    width: 93%;
+    height: 80%;
+  }
+}
+
+@media (max-width: 710px) {
+  .submission-cont {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .submission-cont {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 430px) {
+  .submission-cont {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 430px) {
+  .submission-cont {
+    font-size: 6px;
+  }
+}
+
+.submission-cont .upper-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.submission-cont .upper-cont .assi-tex {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.568);
+  margin-bottom: 40px;
+}
+
+@media (max-width: 640px) {
+  .submission-cont .upper-cont .assi-tex {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .submission-cont .upper-cont .assi-tex {
+    font-size: 10px;
+  }
+}
+
+.submission-cont .upper-cont .togg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 200px;
+  /* Rounded sliders */
+}
+
+@media (max-width: 360px) {
+  .submission-cont .upper-cont .togg {
+    width: 155px;
+  }
+}
+
+.submission-cont .upper-cont .togg .switch {
+  margin-top: -8px;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+@media (max-width: 360px) {
+  .submission-cont .upper-cont .togg .switch {
+    margin-top: -11px;
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    width: 55px;
+  }
+}
+
+.submission-cont .upper-cont .togg .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.submission-cont .upper-cont .togg .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.submission-cont .upper-cont .togg .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.submission-cont .upper-cont .togg input:checked + .slider {
+  background-color: #2196F3;
+}
+
+.submission-cont .upper-cont .togg input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+.submission-cont .upper-cont .togg input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.submission-cont .upper-cont .togg .slider.round {
+  border-radius: 34px;
+}
+
+.submission-cont .upper-cont .togg .slider.round:before {
+  border-radius: 50%;
+}
+
+.submission-cont .batches-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  height: 40px;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  .submission-cont .batches-cont {
+    width: 60%;
+  }
+}
+
+.submission-cont .batches-cont .batch {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media (max-width: 500px) {
+  .submission-cont .batches-cont .batch {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 430px) {
+  .submission-cont .batches-cont .batch {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.submission-cont .batches-cont .m {
+  background: #00ff4c;
+}
+
+.submission-cont .batches-cont .d {
+  background: #18bff6;
+}
+
+.submission-cont .batches-cont .e {
+  background: #ffbf00;
+}
+
+.submission-cont .assign-tables {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+  width: 98.5%;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #202541;
+  height: 50px;
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 0.856);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.submission-cont .assign-tables .head-tex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 150px;
+}
+
+.submission-cont .content {
+  width: 98.5%;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.submission-cont .content .cont-tex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  height: 50px;
+  font-weight: bold;
+  color: rgba(32, 37, 65, 0.808);
+}
+
+.submission-cont .content .cont-tex .icos {
+  color: #00ff4c;
+  font-size: 20px;
+}
+
+.submission-cont .content .cont-tex .icou {
+  color: #ff0000;
+  font-size: 20px;
+}
+
+.submission-cont .content .cont-tex .sub {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 6px 30px;
+  height: 40%;
+  color: #fff;
+}
+
+@media (max-width: 710px) {
+  .submission-cont .content .cont-tex .sub {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3px 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .submission-cont .content .cont-tex .sub {
+    padding: 3px 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .submission-cont .content .cont-tex .sub {
+    padding: 3px 15px;
+  }
+}
+
+.submission-cont .content .cont-tex .success1 {
+  background: #bb0707;
+}
+
+.submission-cont .content .cont-tex .success2 {
+  background: #ff744d;
+}
+
+.submission-cont .content .cont-tex .success3 {
+  background: #ffbf00;
+}
+
+.submission-cont .content .cont-tex .success4 {
+  background: #18bff6;
+}
+
+.submission-cont .content .cont-tex .success5 {
+  background: #00ff4c;
+}
+/*# sourceMappingURL=Submissions.css.map */

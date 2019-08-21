@@ -1,0 +1,146 @@
+.assign-box {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  height: 100%;
+  margin-left: 280px;
+}
+
+@media (max-height: 730px) {
+  .assign-box {
+    height: 96%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .assign-box {
+    margin-left: 90px;
+    width: 92%;
+  }
+}
+
+@media (max-width: 991px) {
+  .assign-box {
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 962px) {
+  .assign-box {
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .assign-box {
+    margin-left: 0px;
+    width: 97%;
+  }
+}
+
+@media (max-height: 600px) {
+  .assign-box {
+    height: 94%;
+  }
+}
+
+@media (max-height: 500px) {
+  .assign-box {
+    height: 91%;
+  }
+}
+
+@media (max-height: 450px) {
+  .assign-box {
+    height: 88%;
+  }
+}
+
+@media (max-height: 380px) {
+  .assign-box {
+    height: 83%;
+  }
+}
+
+@media (max-height: 310px) {
+  .assign-box {
+    height: 70%;
+  }
+}
+
+@media (max-height: 237px) {
+  .assign-box {
+    height: 60%;
+  }
+}
+
+@media (max-height: 237px) {
+  .assign-box {
+    width: 90%;
+  }
+}
+
+.assign-box .arrow {
+  display: none;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 0;
+  top: 47%;
+  text-align: right;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.397);
+  background: #4064f6;
+}
+
+@media (max-width: 1200px) {
+  .assign-box .arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+::-webkit-scrollbar {
+  background: rgba(0, 0, 0, 0.109);
+  height: 60%;
+  width: 4px;
+}
+
+@-webkit-keyframes mov {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotatey(180deg);
+            transform: rotatey(180deg);
+  }
+}
+
+@keyframes mov {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotatey(180deg);
+            transform: rotatey(180deg);
+  }
+}
+/*# sourceMappingURL=Assignment.css.map */

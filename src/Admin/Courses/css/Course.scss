@@ -1,0 +1,263 @@
+$desk1w: 1880px;
+$desk1h: 857px;
+$desk2w: 1776px;
+$desk2h: 778px;
+$desk3w: 1664px;
+$desk3h: 688px;
+$desk4w: 1588px;
+$desk4h: 570px;
+$desk5w: 1486px;
+$desk5h: 492px;
+$desk6w: 1410px;
+$desk6h: 423px;
+$desk7w: 1330px;
+$desk8w: 1256px;
+$desk9w: 1200px;
+$desk10w: 1088px;
+$desk11w: 990px;
+$desk12w: 780px;
+$desk13w: 642px;
+$desk14w: 518px;
+$desk15w: 432px;
+$desk16w: 366px;
+$desk17w: 322px;
+
+@mixin desk1w {
+    @media (max-width: $desk1w) {
+        @content;
+    }
+}
+@mixin desk1h {
+    @media (max-height: $desk1h) {
+        @content;
+    }
+}
+@mixin desk2w {
+    @media (max-width: $desk2w) {
+        @content;
+    }
+}
+@mixin desk2h {
+    @media (max-height: $desk2h) {
+        @content;
+    }
+}
+@mixin desk3w {
+    @media (max-width: $desk3w) {
+        @content;
+    }
+}
+@mixin desk3h {
+    @media (max-height: $desk3h) {
+        @content;
+    }
+}
+@mixin desk4w {
+    @media (max-width: $desk4w) {
+        @content;
+    }
+}
+@mixin desk4h {
+    @media (max-height: $desk4h) {
+        @content;
+    }
+}
+@mixin desk5w {
+    @media (max-width: $desk5w) {
+        @content;
+    }
+}
+@mixin desk5h {
+    @media (max-height: $desk5h) {
+        @content;
+    }
+}
+@mixin desk6w {
+    @media (max-width: $desk6w) {
+        @content;
+    }
+}
+@mixin desk6h {
+    @media (max-height: $desk6h) {
+        @content;
+    }
+}
+@mixin desk7w {
+    @media (max-width: $desk7w) {
+        @content;
+    }
+}
+@mixin desk8w {
+    @media (max-width: $desk8w) {
+        @content;
+    }
+}
+@mixin desk9w {
+    @media (max-width: $desk9w) {
+        @content;
+    }
+}
+@mixin desk10w {
+    @media (max-width: $desk10w) {
+        @content;
+    }
+}
+@mixin desk11w {
+    @media (max-width: $desk11w) {
+        @content;
+    }
+}
+@mixin desk12w {
+    @media (max-width: $desk12w) {
+        @content;
+    }
+}
+@mixin desk13w {
+    @media (max-width: $desk13w) {
+        @content;
+    }
+}
+@mixin desk14w {
+    @media (max-width: $desk14w) {
+        @content;
+    }
+}
+@mixin desk15w {
+    @media (max-width: $desk15w) {
+        @content;
+    }
+}
+@mixin desk16w {
+    @media (max-width: $desk16w) {
+        @content;
+    }
+}
+@mixin desk17w {
+    @media (max-width: $desk17w) {
+        @content;
+    }
+}
+
+.course-cont {
+    cursor: pointer;
+    position: absolute;
+    width: 82%;
+    height: 86%;
+    margin-top: 15px;
+    margin-left: 291px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.425) 2px 2px 20px 2px;
+
+    @include desk1w {
+        width: 81%;
+    }
+    @include desk1h {
+        height: 85%;
+    }
+    @include desk2w {
+        width: 80%;
+    }
+    @include desk2h {
+        height: 84%;
+    }
+    @include desk3w {
+        width: 79%;
+    }
+    @include desk3h {
+        height: 80%;
+    }
+    @include desk4w {
+        width: 77.5%;
+    }
+    @include desk4h {
+        height: 78%;
+    }
+    @include desk5w {
+        width: 76.5%;
+    }
+    @include desk5h {
+        height: 73%;
+    }
+    @include desk6w {
+        width: 75%;
+    }
+    @include desk6h {
+        height: 71%;
+    }
+    @include desk7w {
+        width: 73.5%;
+    }
+    @include desk8w {
+        width: 72.5%;
+    }
+    @include desk9w {
+        margin-left: 91px;
+        width: 88%;
+    }
+    @include desk10w {
+        margin-left: 91px;
+        width: 86.5%;
+    }
+    @include desk11w {
+        margin-left: 10px;
+        width: 93%;
+    }
+    @include desk12w {
+        margin-left: 10px;
+        width: 92%;
+    }
+    @include desk13w {
+        margin-left: 10px;
+        width: 90%;
+    }
+    @include desk14w {
+        margin-left: 10px;
+        width: 88%;
+    }
+    @include desk15w {
+        margin-left: 10px;
+        width: 86%;
+    }
+    @include desk16w {
+        margin-left: 10px;
+        width: 84%;
+    }
+    @include desk17w {
+        margin-left: 10px;
+        width: 82%;
+    }
+
+    .up-cont {
+
+        width: 100%;     
+        margin-bottom: 40px;
+        .assi-tex{
+            font-size: 16px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.568);
+        }
+        .bt-search{
+    
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+    
+            .bt-add{
+                display: inline-block;
+                padding: 13px 19px;
+                color: #fff;
+                border-radius: 8px;
+                background: #fc007d;    
+                font-weight: bold;
+                font-size: 13px;
+            }
+        }
+    }
+    .box {
+        overflow-y: scroll;
+        width: 100%;
+        height: 85%;
+        background: rgba(0, 0, 0, 0.233);
+    }
+}

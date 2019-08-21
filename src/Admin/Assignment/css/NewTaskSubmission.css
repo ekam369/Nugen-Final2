@@ -1,0 +1,208 @@
+.newTask-cont {
+  width: 27%;
+  height: 87%;
+  padding: 20px;
+  padding-top: 0px;
+  margin-top: 18px;
+  margin-left: 14px;
+  background: #fff;
+  overflow-y: scroll;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.274) 2px 4px 20px 2px;
+          box-shadow: rgba(0, 0, 0, 0.274) 2px 4px 20px 2px;
+}
+
+@media (max-width: 1800px) {
+  .newTask-cont {
+    width: 25%;
+  }
+}
+
+@media (max-width: 1640px) {
+  .newTask-cont {
+    width: 24%;
+  }
+}
+
+@media (max-width: 1565px) {
+  .newTask-cont {
+    width: 23%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .newTask-cont {
+    width: 21%;
+  }
+}
+
+@media (max-width: 1330px) {
+  .newTask-cont {
+    width: 18%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .newTask-cont {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .newTask-cont {
+    position: absolute;
+    right: 0;
+    width: 300px;
+  }
+}
+
+.newTask-cont .newTex {
+  padding-top: 20px;
+  width: 100%;
+  height: 40px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+  background: #fff;
+}
+
+.newTask-cont .submissions-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  margin-top: 20px;
+  -webkit-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+}
+
+@media (max-width: 1640px) {
+  .newTask-cont .submissions-cont {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@media (max-width: 1330px) {
+  .newTask-cont .submissions-cont {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@media (max-width: 1199px) {
+  .newTask-cont .submissions-cont {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.newTask-cont .submissions-cont .total-submissions {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-weight: bold;
+  background: #fc007d;
+}
+
+.newTask-cont .submissions-cont .line {
+  margin-top: 8px;
+  width: 8px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.123);
+  border-radius: 10px;
+}
+
+.newTask-cont .submissions-cont .sub-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  height: 50px;
+  margin-top: 4px;
+}
+
+@media (max-width: 1500px) {
+  .newTask-cont .submissions-cont .sub-box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1330px) {
+  .newTask-cont .submissions-cont .sub-box {
+    width: 100%;
+  }
+}
+
+.newTask-cont .submissions-cont .sub-box .name-tex {
+  font-size: 15px;
+  width: 76px;
+  color: rgba(0, 0, 0, 0.849);
+  font-weight: bold;
+}
+
+.newTask-cont .submissions-cont .sub-box .batch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -3px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fc007d;
+  color: #fff;
+  font-weight: bold;
+}
+
+.newTask-cont .submissions-cont .sub-box .one {
+  background: #00ff4c;
+}
+
+.newTask-cont .submissions-cont .sub-box .two {
+  background: #18bff6;
+}
+
+.newTask-cont .submissions-cont .sub-box .three {
+  background: #ffbf00;
+}
+
+.newTask-cont .submissions-cont .sub-box .view-task {
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+@media (max-width: 1228px) {
+  .newTask-cont .submissions-cont .sub-box .view-task {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=NewTaskSubmission.css.map */

@@ -1,0 +1,178 @@
+$desk1: 730px;
+$desk2: 600px;
+$desk3: 500px;
+$desk4: 450px;
+$desk5: 380px;
+$desk6: 310px;
+$desk7: 237px;
+$desk1w: 1200px;
+$desk2w: 991px;
+$desk3w: 962px;
+$desk4w: 710px;
+$desk5w: 500px;
+$desk6w: 430px;
+$desk61w: 340px;
+$desk7w: 1120px;
+
+@mixin desk1{
+    @media (max-height: $desk1) {
+        @content;
+    }
+}
+@mixin desk1w{
+    @media (max-width: $desk1w) {
+        @content;
+    }
+}
+@mixin desk2{
+    @media (max-height: $desk2) {
+        @content;
+    }
+}
+@mixin desk2w{
+    @media (max-width: $desk2w) {
+        @content;
+    }
+}
+@mixin desk3{
+    @media (max-height: $desk3) {
+        @content;
+    }
+}
+@mixin desk3w{
+    @media (max-width: $desk3w) {
+        @content;
+    }
+}
+@mixin desk4{
+    @media (max-height: $desk4) {
+        @content;
+    }
+}
+@mixin desk4w{
+    @media (max-width: $desk4w) {
+        @content;
+    }
+}
+@mixin desk5{
+    @media (max-height: $desk5) {
+        @content;
+    }
+}
+@mixin desk5w{
+    @media (max-width: $desk5w) {
+        @content;
+    }
+}
+@mixin desk6{
+    @media (max-height: $desk6) {
+        @content;
+    }
+}
+@mixin desk6w{
+    @media (max-width: $desk6w) {
+        @content;
+    }
+}
+@mixin desk61w{
+    @media (max-width: $desk6w) {
+        @content;
+    }
+}
+@mixin desk7{
+    @media (max-height: $desk7) {
+        @content;
+    }
+}
+@mixin desk7w{
+    @media (max-width: $desk7w) {
+        @content;
+    }
+}
+
+.assign-box{
+    position: absolute;
+    display: flex;
+    width: 85%;
+    height: 100%;
+    margin-left: 280px;
+
+    @include desk1{
+        height: 96%;
+    }
+    @include desk1w{
+        margin-left: 90px;
+        width: 92%;
+    }
+    @include desk2w{
+        margin-left: 0px;
+        width: 100%;
+    }
+    @include desk3w{
+        margin-left: 0px;
+        width: 100%;
+    }
+    @include desk2w{
+        margin-left: 0px;
+        width: 97%;
+    }
+    @include desk2{
+        height: 94%;
+    }
+    @include desk3{
+        height: 91%;
+    }
+    @include desk4{
+        height: 88%;
+    }
+    @include desk5{
+        height: 83%;
+    }
+    @include desk6{
+        height: 70%;
+    }
+    @include desk7{
+        height: 60%;
+    }
+    @include desk7{
+        width: 90%;
+    }
+
+    .arrow{
+        display: none;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        right: 0;
+        top: 47%;
+        text-align: right;
+        font-size: 40px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.397);
+        background: rgb(64,100,246);
+
+        @include desk1w {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            transform: scale(0.8);
+        }
+    }
+    
+}
+::-webkit-scrollbar{
+    background: rgba(0, 0, 0, 0.109);
+    height: 60%;
+    width: 4px;
+}
+
+@keyframes mov{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotatey(180deg);
+    }
+}

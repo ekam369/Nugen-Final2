@@ -1,0 +1,198 @@
+.batch-cont {
+  position: absolute;
+  width: 82%;
+  height: 86%;
+  margin-top: 15px;
+  margin-left: 291px;
+  padding: 20px;
+  background: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.425) 2px 2px 20px 2px;
+          box-shadow: rgba(0, 0, 0, 0.425) 2px 2px 20px 2px;
+}
+
+@media (max-width: 1880px) {
+  .batch-cont {
+    width: 81%;
+  }
+}
+
+@media (max-height: 857px) {
+  .batch-cont {
+    height: 85%;
+  }
+}
+
+@media (max-width: 1776px) {
+  .batch-cont {
+    width: 80%;
+  }
+}
+
+@media (max-height: 778px) {
+  .batch-cont {
+    height: 84%;
+  }
+}
+
+@media (max-width: 1664px) {
+  .batch-cont {
+    width: 79%;
+  }
+}
+
+@media (max-height: 688px) {
+  .batch-cont {
+    height: 80%;
+  }
+}
+
+@media (max-width: 1588px) {
+  .batch-cont {
+    width: 77.5%;
+  }
+}
+
+@media (max-height: 570px) {
+  .batch-cont {
+    height: 78%;
+  }
+}
+
+@media (max-width: 1486px) {
+  .batch-cont {
+    width: 76.5%;
+  }
+}
+
+@media (max-height: 492px) {
+  .batch-cont {
+    height: 73%;
+  }
+}
+
+@media (max-width: 1410px) {
+  .batch-cont {
+    width: 75%;
+  }
+}
+
+@media (max-height: 423px) {
+  .batch-cont {
+    height: 71%;
+  }
+}
+
+@media (max-width: 1330px) {
+  .batch-cont {
+    width: 73.5%;
+  }
+}
+
+@media (max-width: 1256px) {
+  .batch-cont {
+    width: 72.5%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .batch-cont {
+    margin-left: 91px;
+    width: 88%;
+  }
+}
+
+@media (max-width: 1088px) {
+  .batch-cont {
+    margin-left: 91px;
+    width: 86.5%;
+  }
+}
+
+@media (max-width: 990px) {
+  .batch-cont {
+    margin-left: 10px;
+    width: 93%;
+  }
+}
+
+@media (max-width: 780px) {
+  .batch-cont {
+    margin-left: 10px;
+    width: 92%;
+  }
+}
+
+@media (max-width: 642px) {
+  .batch-cont {
+    margin-left: 10px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 518px) {
+  .batch-cont {
+    margin-left: 10px;
+    width: 88%;
+  }
+}
+
+@media (max-width: 432px) {
+  .batch-cont {
+    margin-left: 10px;
+    width: 86%;
+  }
+}
+
+@media (max-width: 366px) {
+  .batch-cont {
+    margin-left: 10px;
+    width: 84%;
+  }
+}
+
+@media (max-width: 322px) {
+  .batch-cont {
+    margin-left: 10px;
+    width: 82%;
+  }
+}
+
+.batch-cont .up-cont {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.batch-cont .up-cont .assi-tex {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.568);
+}
+
+.batch-cont .up-cont .bt-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+
+.batch-cont .up-cont .bt-search .bt-add {
+  cursor: pointer;
+  display: inline-block;
+  padding: 13px 19px;
+  color: #fff;
+  border-radius: 8px;
+  background: #fc007d;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.batch-cont .box {
+  overflow-y: scroll;
+  width: 100%;
+  height: 85%;
+  background: rgba(0, 0, 0, 0.233);
+}
+/*# sourceMappingURL=Batches.css.map */

@@ -1,0 +1,160 @@
+.headCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.123) 1px 1px 30px 1px;
+          box-shadow: rgba(0, 0, 0, 0.123) 1px 1px 30px 1px;
+}
+
+.headCont .nugen-template {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 280px;
+  height: 100%;
+  font-size: 35px;
+  font-weight: bold;
+  background-color: #4064f6;
+}
+
+@media (max-width: 991px) {
+  .headCont .nugen-template {
+    width: 100%;
+    display: block;
+  }
+}
+
+.headCont .nugen-template .nugen-tex {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .headCont .nugen-template .nugen-tex {
+    display: none;
+  }
+}
+
+.headCont .nugen-template .sideMenu {
+  width: 30px;
+  height: 25px;
+  margin-left: 20px;
+  margin-top: -5px;
+  display: none;
+}
+
+@media (max-width: 430px) {
+  .headCont .nugen-template .sideMenu {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
+.headCont .nugen-template .sideMenu #nav-icon1, .headCont .nugen-template .sideMenu #nav-icon2, .headCont .nugen-template .sideMenu #nav-icon3, .headCont .nugen-template .sideMenu #nav-icon4 {
+  width: 28px;
+  height: 17px;
+  position: relative;
+  margin: 22px 0px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.headCont .nugen-template .sideMenu #nav-icon1 span, .headCont .nugen-template .sideMenu #nav-icon3 span, .headCont .nugen-template .sideMenu #nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.headCont .nugen-template .sideMenu #nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+.headCont .nugen-template .sideMenu #nav-icon1 span:nth-child(2) {
+  top: 10px;
+}
+
+.headCont .nugen-template .sideMenu #nav-icon1 span:nth-child(3) {
+  top: 20px;
+}
+
+.headCont .nugen-template .sideMenu #nav-icon1.open span:nth-child(1) {
+  top: 12px;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.headCont .nugen-template .sideMenu #nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.headCont .nugen-template .sideMenu #nav-icon1.open span:nth-child(3) {
+  top: 12px;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+@media (max-width: 991px) {
+  .headCont .nugen-template .sideMenu {
+    display: block;
+  }
+}
+
+.headCont .right-side {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 230px;
+  height: 50px;
+  right: 40px;
+  color: rgba(0, 0, 0, 0.459);
+}
+
+@media (max-width: 430px) {
+  .headCont .right-side {
+    width: 150px;
+  }
+}
+
+@media (max-width: 710px) {
+  .headCont .right-side {
+    width: 180px;
+  }
+}
+
+.headCont .right-side .photo {
+  width: 30px;
+  height: 30px;
+  background: #dfdfdf;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=Head.css.map */

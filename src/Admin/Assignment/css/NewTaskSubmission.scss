@@ -1,0 +1,197 @@
+$desk1w: 1800px;
+$desk2w: 1640px;
+$desk3w: 1565px;
+$desk4w: 1500px;
+$desk5w: 1330px;
+$desk6w: 1228px;
+$desk7w: 1200px;
+$desk7mw: 1199px;
+$desk8w: 962px;
+$desk9w: 550px;
+
+@mixin desk1w {
+    @media(max-width: $desk1w) {
+        @content;
+    }
+}
+@mixin desk2w {
+    @media(max-width: $desk2w) {
+        @content;
+    }
+}
+@mixin desk3w {
+    @media(max-width: $desk3w) {
+        @content;
+    }
+}
+@mixin desk4w {
+    @media(max-width: $desk4w) {
+        @content;
+    }
+}
+@mixin desk5w {
+    @media(max-width: $desk5w) {
+        @content;
+    }
+}
+@mixin desk6w {
+    @media(max-width: $desk6w) {
+        @content;
+    }
+}
+@mixin desk7w {
+    @media(max-width: $desk7w) {
+        @content;
+    }
+}
+@mixin desk7mw {
+    @media(max-width: $desk7mw) {
+        @content;
+    }
+}
+@mixin desk8w {
+    @media(max-width: $desk8w) {
+        @content;
+    }
+}
+@mixin desk9w {
+    @media(max-width: $desk9w) {
+        @content;
+    }
+}
+
+.newTask-cont{
+    width: 27%;
+    height: 87%;
+    padding: 20px;
+    padding-top: 0px;
+    margin-top: 18px;
+    margin-left: 14px;
+    background: #fff;
+    overflow-y: scroll;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 4px 20px 2px;
+
+    @include desk1w{
+        width: 25%;
+    }
+    @include desk2w{
+        width: 24%;
+    }
+    @include desk3w{
+        width: 23%;
+    }
+    @include desk4w{
+        width: 21%;
+    }
+    @include desk5w{
+        width: 18%;
+    }
+    @include desk7w{
+        display: none;
+    }
+    @include desk7mw{
+        position: absolute;
+        right: 0;
+        width: 300px;
+    }
+    
+        .newTex{
+            padding-top: 20px;
+            width: 100%;
+            height: 40px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.5);
+            background: #fff;
+
+        }
+
+        .submissions-cont{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            padding-top: 20px;
+            margin-top: 20px;
+            transform-origin: 50% 0%;
+            @include desk2w{
+                transform: scale(0.9);
+            }
+            @include desk5w{
+                transform: scale(0.8);
+            }
+            @include desk7mw {
+                transform: scale(1);
+            }
+
+            .total-submissions{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                font-weight: bold;
+                background: #fc007d;  
+            }
+            .line{
+                margin-top: 8px;
+                width: 8px;
+                height: 60px;
+                background: rgba(0, 0, 0, 0.123);
+                border-radius: 10px;
+            }
+            .sub-box{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width:70%;
+                height: 50px;
+                margin-top: 4px;
+                
+                @include desk4w{
+                    width: 90%;
+                }
+                @include desk5w{
+                    width: 100%;
+                }
+
+                .name-tex{
+                    font-size: 15px;
+                    width: 76px;
+                    color: rgba(0, 0, 0, 0.849);
+                    font-weight: bold;
+                }
+                .batch{
+                    display: flex;
+                    margin-left: -3px;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background: #fc007d;
+                    color: #fff;
+                    font-weight: bold;
+                }
+                .one{
+                    background: #00ff4c;
+                }
+                .two{
+                    background: #18bff6;
+                }
+                .three{
+                    background: #ffbf00;
+                }
+                .view-task{
+                    font-size: 16px;
+                    text-decoration: underline;
+
+                    @include desk6w{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+}
