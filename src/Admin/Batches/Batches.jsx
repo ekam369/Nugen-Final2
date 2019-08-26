@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './css/Batches.css';
 import BatchInput from './BatchInput';
-// import Sidebar2 from '../../Sidebar2/Sidebar2';
-// import Head from '../../Head/Head';
+import Sidebar2 from '../../Sidebar2/Sidebar2';
+import Head from '../../Head/Head';
 
 class Batches extends Component {
 
@@ -25,8 +25,8 @@ class Batches extends Component {
     render() { 
         return (  
             <div>
-                {/* <Head /> */}
-                {/* <Sidebar2 /> */}
+                <Head />
+                <Sidebar2 />
                 <div className="batch-cont">
                     <div className="up-cont">
                         <div className="assi-tex">Batches</div>
@@ -37,7 +37,9 @@ class Batches extends Component {
                             <input type="text" className="search" placeholder="search"/>
                         </div>
                     </div>
-                    <div className="box"></div>
+                    <div className="box">
+                        
+                    </div>
                 </div>
                 <BatchInput show={this.state.show} toggleState={this.updateParState}/>
             </div>  
