@@ -1,22 +1,31 @@
 import React, { Component } from 'react';
-import './css/Expenditure.css';
-import ExpenditureInput from './ExpenditureInput';
+import './css/Admissions.css';
+import AdmissionInput from './AdmissionInput';
 import Sidebar2 from '../../Sidebar2/Sidebar2';
 import Head from '../../Head/Head';
-import ExpenditureTable from './ExpenditureTable';
-import ExpenditureEditInput from './ExpenditureEditInput';
+import AdmissionsTable from './AdmissionsTable';
 
-class Expenditure extends Component {
+class Admissions extends Component {
 
     state = {
         showInp: false,
         showEdit: false,
         user: {
-            amount: 0,
-            description: "",
-            from_account_of: "",
-            mode_of_payment: "",
-            paid_by: ""
+            student_name: '',
+            email: '',
+            mobile_number: '',
+            school_college: '',
+            stream: '',
+            father_mother_name: '',
+            parent_mobile_number: '',
+            permanent_address: '',
+            batch_id: 0,
+            total_fee: '',
+            advance_payment: '',
+            total_installments: 0,
+            referred_by: '',
+            dob: '',
+            batch_name: ''
         }
     }
 
@@ -46,35 +55,29 @@ class Expenditure extends Component {
         })
     }
 
-
     render() { 
-        return (
+        return (  
             <div>
                 <Head />
                 <Sidebar2 />
-                <div className="exp-cont">
+                <div className="addm-cont">
                     <div className="up-cont">
-                        <div className="assi-tex">Expenditures</div>
+                        <div className="assi-tex">Admissions</div>
                         <div className="bt-search">
                             <div onClick={this.showExpInp} className="bt-add">
                                 <i className="fas fa-plus-circle"></i>&nbsp;
                                 Add</div>
                             <input type="text" className="search" placeholder="search"/>
-                        </div>
+                        </div>  
                     </div>
                     <div className="box">
-                        <ExpenditureTable toggleState={this.showEditInp} />
+                        <AdmissionsTable toggleState={this.showEditInp}/>
                     </div>
                 </div>
-                <ExpenditureInput show={this.state.showInp} toggleState={this.updateParState}/>
-                <ExpenditureEditInput 
-                    show={this.state.showEdit} 
-                    toggleState={this.updateEditState}
-                    user= {this.state.user}    
-                />
+                <AdmissionInput show={this.state.showInp} toggleState={this.updateParState}/>
             </div>  
         );
     }
 }
  
-export default Expenditure;
+export default Admissions;

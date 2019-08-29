@@ -159,13 +159,13 @@ class BatchInpcontainer extends Component {
                             />
                         </div>
                         <div className="suggest-boxes-cont">
-                            <div className="close-cont">
-                                
-                            </div>
                             {
                                 this.state.makeArr.map((v, i) => {
                                     return(
-                                        <div onClick={() => this.removeElements(i)} key={i} className="suggest-box">{v.course_name}</div>
+                                        <div className="suggest-box-cont">
+                                            <div onClick={() => this.removeElements(i)} className="close-cont"></div>
+                                            <div key={i} className="suggest-box">{v.course_name}</div>
+                                        </div>
                                     )
                                 })
                             }                            

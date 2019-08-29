@@ -8,11 +8,13 @@ import Batches from './Admin/Batches/Batches';
 import Expenditure from './Admin/Expenditure/Expenditure';
 import Courses from './Admin/Courses/Course';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Admissions from './Admin/Admissions/Admissions';
 
 ReactDOM.render(
     <Router>
         <Switch>
             <Route exact path="/" component={App} />
+            <Route path="/admissions" component={Admissions}/>
             <Route path="/assignment" component={AAssignment} />
             <Route path="/batches" component={Batches} />
             <Route path="/expenditure" component={Expenditure} />

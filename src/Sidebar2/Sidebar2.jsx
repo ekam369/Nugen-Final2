@@ -35,7 +35,7 @@ class Sidebar2 extends Component {
                         
                         <div className="tab">
                             <i className="fas fa-user ico"></i>
-                            <div className="tab-tex">Admissions</div>
+                            <div className="tab-tex"><Link className="link" to="/admissions">Admissions</Link></div>
                         </div>
                         <div className="tab">
                             <i className="fas fa-money-check-alt ico"></i>

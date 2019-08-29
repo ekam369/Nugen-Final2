@@ -22,16 +22,21 @@ ul {
     margin-left: -15px;
     // display: none;
 
-    .suggest-box {
+    .suggest-box-cont {
+        width: auto;
         display: flex;
         justify-content: center;
         align-items: center;
         width: auto;
         height: 30px;
-        padding: 0 10px;
+        padding: 2px 10px;
         border: solid #000 1px;
         border-radius: 10px;
         margin-left: 5px;
+        
+        .suggest-box {
+            margin-left: 5px;   
+        }
     }
 
     .close-cont {
@@ -40,5 +45,10 @@ ul {
         background-image: url("../../Assets/53804.png");
         background-size: 100% 100%;
         background-repeat: no-repeat;
+        filter: opacity(0.5);
+    }
+    .close-cont:hover {
+        transition: 0.2s;
+        filter: opacity(1);
     }
 }

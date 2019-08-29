@@ -35,7 +35,7 @@ class Batches extends Component {
                                 <i className="fas fa-plus-circle"></i>&nbsp;
                                 Add</div>
                             <input type="text" className="search" placeholder="search"/>
-                        </div>
+                        </div>  
                     </div>
                     <div className="box">
                         

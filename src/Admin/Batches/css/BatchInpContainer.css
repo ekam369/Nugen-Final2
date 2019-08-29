@@ -27,7 +27,8 @@ ul {
   margin-left: -15px;
 }
 
-.suggest-boxes-cont .suggest-box {
+.suggest-boxes-cont .suggest-box-cont {
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,9 +40,13 @@ ul {
           align-items: center;
   width: auto;
   height: 30px;
-  padding: 0 10px;
+  padding: 2px 10px;
   border: solid #000 1px;
   border-radius: 10px;
+  margin-left: 5px;
+}
+
+.suggest-boxes-cont .suggest-box-cont .suggest-box {
   margin-left: 5px;
 }
 
@@ -51,5 +56,14 @@ ul {
   background-image: url("../../Assets/53804.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+
+.suggest-boxes-cont .close-cont:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-filter: opacity(1);
+          filter: opacity(1);
 }
 /*# sourceMappingURL=BatchInpContainer.css.map */

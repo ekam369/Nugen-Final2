@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACR,KAAK,EAAE,IAAI;CAKd;;AAND,AAGI,WAHO,CAGP,EAAE,CAAA;EACE,UAAU,EAAE,MAAM;CACrB",
+    "sources": [
+        "ExpenditureTable.scss"
+    ],
+    "names": [],
+    "file": "ExpenditureTable.css"
+}

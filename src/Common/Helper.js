@@ -27,6 +27,20 @@ const Helper = (url, method, body) => {
                 return res.json();
             })
         )
+    }
+    else if(method === 'PUT') {
+        return(
+            fetch(make_url(url), {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(body)
+            })
+            .then((res) => {
+                return res.json();
+            })
+        )
     } 
 }
 
